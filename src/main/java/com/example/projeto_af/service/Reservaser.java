@@ -58,7 +58,6 @@ public class Reservaser {
         Clientmodel cliente = clienteService.getClienteByCodigo(codigoClient);
         reserva.setInicio(LocalDateTime.now());
 
-        //Associar um pedido com cliente e o cliente com o pedido
         reserva.setCliente(cliente);
         cliente.addReserva(reserva);
 
